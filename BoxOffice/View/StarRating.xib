@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StarRatingView" customModule="BoxOffice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="PJh-4i-UpR">
+                    <rect key="frame" x="0.0" y="0.0" width="252" height="48"/>
+                    <subviews>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFo-tJ-Jeu">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <state key="normal" image="ic_star_large"/>
+                        </button>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-D8-NdX">
+                            <rect key="frame" x="51" y="0.0" width="48" height="48"/>
+                            <state key="normal" image="ic_star_large"/>
+                        </button>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lr-MK-UlX">
+                            <rect key="frame" x="102" y="0.0" width="48" height="48"/>
+                            <state key="normal" image="ic_star_large"/>
+                        </button>
+                        <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-ew-pHr">
+                            <rect key="frame" x="153" y="0.0" width="48" height="48"/>
+                            <state key="normal" image="ic_star_large"/>
+                        </button>
+                        <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQW-z0-kAv">
+                            <rect key="frame" x="204" y="0.0" width="48" height="48"/>
+                            <state key="normal" image="ic_star_large"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lQW-z0-kAv" firstAttribute="height" secondItem="JFo-tJ-Jeu" secondAttribute="height" id="8EO-cl-bG4"/>
+                        <constraint firstItem="1lr-MK-UlX" firstAttribute="width" secondItem="JFo-tJ-Jeu" secondAttribute="width" id="95y-wE-qFd"/>
+                        <constraint firstItem="1lr-MK-UlX" firstAttribute="height" secondItem="JFo-tJ-Jeu" secondAttribute="height" id="WPr-km-i8T"/>
+                        <constraint firstItem="ONC-D8-NdX" firstAttribute="width" secondItem="JFo-tJ-Jeu" secondAttribute="width" id="XPi-qF-j2h"/>
+                        <constraint firstItem="TLD-ew-pHr" firstAttribute="height" secondItem="JFo-tJ-Jeu" secondAttribute="height" id="ijB-YH-WIl"/>
+                        <constraint firstItem="ONC-D8-NdX" firstAttribute="height" secondItem="JFo-tJ-Jeu" secondAttribute="height" id="ke6-PY-xmt"/>
+                        <constraint firstItem="lQW-z0-kAv" firstAttribute="width" secondItem="JFo-tJ-Jeu" secondAttribute="width" id="pHQ-B0-vnF"/>
+                        <constraint firstItem="TLD-ew-pHr" firstAttribute="width" secondItem="JFo-tJ-Jeu" secondAttribute="width" id="sY3-px-y52"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PJh-4i-UpR" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6wa-cD-BER"/>
+                <constraint firstItem="PJh-4i-UpR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KIS-Lt-8Gv"/>
+                <constraint firstItem="PJh-4i-UpR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="UT9-cl-5Vw"/>
+                <constraint firstItem="PJh-4i-UpR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vqd-VY-8ef"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="fifthStarButton" destination="lQW-z0-kAv" id="Ymi-6U-UXs"/>
+                <outlet property="firstStarButton" destination="JFo-tJ-Jeu" id="HI7-xp-xAf"/>
+                <outlet property="fourthStarButton" destination="TLD-ew-pHr" id="m9B-fW-NJK"/>
+                <outlet property="secondStarButton" destination="ONC-D8-NdX" id="bA8-i1-TjT"/>
+                <outlet property="thirdStarButton" destination="1lr-MK-UlX" id="I8Z-Fm-BDZ"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="-554"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_star_large" width="48" height="48"/>
+    </resources>
+</document>
